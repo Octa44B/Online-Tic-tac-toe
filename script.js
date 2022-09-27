@@ -72,7 +72,7 @@ function onButtonClickGame(clicked_id)
 
 function onButtonClickRestartGame()
 {
-    if((isConnected || gameStarted) && (XWin != null || checkDraw())){resetGame(false, false);console.log("yes");}
+    if((isConnected || gameStarted) && (XWin != null || checkDraw())){resetGame(false, false);}
 }
 
 function checkDraw()

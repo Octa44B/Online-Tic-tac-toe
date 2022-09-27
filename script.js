@@ -72,7 +72,7 @@ function onButtonClickGame(clicked_id)
 
 function onButtonClickRestartGame()
 {
-    if((isConnected || gameStarted) && (XWin != null || checkDraw())){resetGame(false, false);}
+    if((isConnected || gameStarted) && (XWin != null || checkDraw())){resetGame(false, false);console.log("yes");}
 }
 
 function checkDraw()
@@ -137,7 +137,7 @@ function resetGame(local, changeGameState)
     }
     if(!local)
     {
-        ClearServer();
+        ClearClients();
         MessageToServer('message_ng', {gameStarted_infos: gameStarted});
     }
     if(gameStarted)

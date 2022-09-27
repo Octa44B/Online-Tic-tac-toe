@@ -1,0 +1,123 @@
+@font-face
+{
+    src: url(fonts/Cyberpunk-Regular.ttf);
+    font-family: Cyberpunk;
+}
+
+@font-face {
+    src: url(fonts/scoreboard.ttf);
+    font-family: scoreboardFont;
+}
+
+.h3-score
+{
+    font-size: 90px;
+    vertical-align: middle;
+    font-family: scoreboardFont;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#h3ScoreX
+{
+    float: left;
+    margin-left: 15%;
+}
+
+#h3ScoreO
+{
+    float: right;
+    margin-right: 15%;
+}
+
+.h1-title
+{
+    text-align: center;
+    font-family: Cyberpunk;
+    color: #5994ce;
+    font-weight: bolder;
+    font-size: 50px;
+    width: 100%;
+    margin-top: 0%;
+    background-color: blueviolet;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px blueviolet;
+}
+
+.h2-winner
+{
+    text-align: center;
+    color: #760aa8;   
+    font-size: xx-large;
+    margin: 0%;
+    border-radius: 30px;
+}
+
+.div-buttonStartGame
+{
+    text-align: center;
+}
+
+.div-board
+{
+    display: inline-block;
+    align-items: center;
+    /* Pour centrer */
+    justify-content: center;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+    /* Pour centrer */
+    margin: 0;
+    padding: 0;
+}
+
+.button-startGame
+{
+    display: none;
+    font-size: 20px;
+    box-shadow: 1px 2px 2px blueviolet;
+    border-radius: 10px;
+    border: unset;
+    background-color: rgb(220, 220, 220);
+    transition-duration: 1000ms;
+}
+
+.button-startGame:hover
+{
+    background-color: rgb(200,200,200);
+    transition-duration: 1000ms;
+}
+
+.div-choose
+{
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #190087;
+    box-shadow: 0px 3px 2px blueviolet; 
+    padding: 50px;
+    margin: 5px; 
+    background-size: 50%;
+    background-color: whitesmoke;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-duration: 1000ms;
+    transform: rotate(0deg);
+}
+
+.div-choose:hover
+{
+    background-color: blueviolet;
+    transform: rotate(360deg);
+    transition-duration: 1000ms;
+}
+
+
+.li-line1, .li-line2, .li-line3
+{
+    display: flex; /*pour que l'emplacement des divs soit bien en 3x3 et pas en colonne*/
+}

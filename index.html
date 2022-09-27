@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Morpion</title>
+        <link rel="stylesheet" href="style.css">
+        <meta>
+    </head>
+    <body>
+        <section class="section-game">
+            <h1 class="h1-title">MORPION</h1>
+            <div class="div-buttonStartGame">
+                <button class="button-startGame" id="button-startGameID" onclick="onButtonClickRestartGame()"></button>
+            </div>
+            <div class="div-board" id="dboard">
+                <ul class="ul-board">
+                    <li class="li-line1" style="list-style-type: none"> <!--style pour ne pas mettre de points au début des listes-->
+                        <div class="div-choose" id="d1" onclick="onButtonClickGame(this.id)">
+                        
+                        </div>
+                        <div class="div-choose" id="d2" onclick="onButtonClickGame(this.id)">
+                        
+                        </div>
+                        <div class="div-choose" id="d3" onclick="onButtonClickGame(this.id)">
+                        
+                        </div>
+                    </li>
+                    <li class="li-line2" style="list-style-type: none">
+                        <div class="div-choose" id="d4" onclick="onButtonClickGame(this.id)">
+                        
+                        </div>
+                        <div class="div-choose" id="d5" onclick="onButtonClickGame(this.id)">
+                        
+                        </div>
+                        <div class="div-choose" id="d6" onclick="onButtonClickGame(this.id)">
+                        
+                        </div>
+                    </li>
+                    <li class="li-line3" style="list-style-type: none">
+                        <div class="div-choose" id="d7" onclick="onButtonClickGame(this.id)">
+                        
+                        </div>
+                        <div class="div-choose" id="d8" onclick="onButtonClickGame(this.id)">
+                        
+                        </div>
+                        <div class="div-choose" id="d9" onclick="onButtonClickGame(this.id)">
+                        
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <h2 class="h2-winner" id="hwin"></h2>
+            <div class="div-scoreContainer">
+                <div class="div-score" id="dScoreX">
+                    <h3 class="h3-score" id="h3ScoreX"></h3>
+                </div>
+                <div class="div-score" id="dScoreO">
+                    <h3 class="h3-score" id="h3ScoreO"></h3>
+                </div>
+            </div>
+        </section>
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
